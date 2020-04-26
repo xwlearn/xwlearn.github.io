@@ -27,7 +27,7 @@
     <main id="app">
         <aside>
             <p id="describe">
-                可以在这里简单介绍你自己
+                无他，就是想bb几句
             </p>
         </aside>
         <p class="tip">现在总共 b 了 {{count}} 条</p>
@@ -84,7 +84,7 @@
     function getData(page = 0) {
         query.descending('createdAt').skip(page * 20).limit(20).find().then(function(results) {
             if (results.length == 0) {
-                alert('之前没 b 过了')
+                alert('b尽，待续')
             } else {
                 let resC = results;
                 reqData = false;
